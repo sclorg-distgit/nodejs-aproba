@@ -10,10 +10,10 @@
 
 Name:		%{?scl_prefix}nodejs-aproba
 Version:	1.0.4
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	Function argument validator
 
-License:	MIT and CC-BY
+License:	ISC
 URL:		https://github.com/iarna/aproba
 Source0:	https://registry.npmjs.org/%{packagename}/-/%{packagename}-%{version}.tgz
 
@@ -58,6 +58,9 @@ cp -pr package.json *.js \
 %{nodejs_sitelib}/%{packagename}
 
 %changelog
+* Fri Mar 10 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.0.4-3
+- Correct license
+
 * Fri Sep 16 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.0.4-2
 - Built for RHSCL
 
